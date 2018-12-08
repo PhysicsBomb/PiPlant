@@ -7,8 +7,9 @@
 }
 
 .navborder{
-  border-bottom: 10px;
   border-color: green;
+  border-bottom-style: solid;
+  border-width: 7px
 }
 
 *{
@@ -18,8 +19,37 @@
 .roboto{
 }
 
+.nav-link{
+  font-weight: bold;
+  font-size: 20px;
+  color: #009900;
+  transition: transform 500ms ease;
+  margin-left: 30px;
+  border-style: solid;
+  border-radius: 10%;
+  border-width: 2px;
+}
+
+
+
+.nav-link:hover{
+  transform:scale(1.25);
+  color: #009900;
+}
+
+.navbar-fixed-top {
+    height: 100px; /* Whatever you want. */
+}
+
 #logo{
-  transform: scale(0.5);
+  transform: scale(0.15);
+}
+
+#name{
+  color: orange !important;
+  border-width: 0px !important;
+  font-size: 30px !important;
+  font-style: italic;
 }
 
 .navpad{
