@@ -1,0 +1,27 @@
+.bg-pp-green{
+  background-image: linear-gradient(-45deg, #33cc33, #00ccff);
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.navborder{
+  border-bottom: 10px;
+  border-color: green;
+}
+
+*{
+  font-family: Roboto;
+}
+
+.roboto{
+}
+
+#logo{
+  transform: scale(0.5);
+}
+
+.navpad{
+  padding: 50px, 50px, 50px, 50px;
+}
