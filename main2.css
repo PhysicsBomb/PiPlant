@@ -18,5 +18,15 @@
 	text-align: center;
 }
 #rating{
+	position: fixed;
+	right: 25%;
+	bottom: 30%;
+}
+#outside{
 	text-align: center;
+	font-family: Roboto; 
+}
+#inside{
+	text-align: center;
+	font-family: Roboto; 
 }

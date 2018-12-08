@@ -51,16 +51,24 @@
 	    </form>
 	  </div>
 	</nav>
-
-
-
 			<link rel="stylesheet" style="text/stylesheet" href="main2.css">
 		</HEAD>
 		<BODY class="bg-pp-green">
 			<div class="inline1 fleft">
-			<DIV class="venkat" id="outsidetemp"></DIV>
-			<DIV class="rohan" id="internaltemp"></DIV>
-		</div>
+			<FIGURE id="outside">
+				<DIV class="venkat" id="outsidetemp"></DIV>
+				<FIGCAPTION>
+					Graph of the temperature outside
+				</FIGCAPTION>
+			</FIGURE>
+			<FIGURE id="inside">
+				<DIV class="rohan" id="internaltemp"></DIV>
+				<FIGCAPTION>
+					Graph of the temperature near the plant
+				</FIGCAPTION>
+			</FIGURE>
+			</div>
+
 			<IMG class="brennan fright inline1 brennan-resize" src="./pi-plant.jpg"></IMG>
 			<!-- <img src = "https://c1.staticflickr.com/5/4873/44415504720_0b8cb5aa12_o.jpg"> -->
 			<DIV id="location"></DIV>
@@ -68,5 +76,10 @@
 			<DIV id="datetime"></DIV>
 			<DIV id="humidity"></DIV>
 			<DIV id="rating"></DIV>
+			<div class="inlinecenter">
+				<div class="donut">
+					<span id="rating"></span>
+				</div>
+			</div>
 		</BODY>
 	</HTML>

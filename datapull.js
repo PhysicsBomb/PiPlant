@@ -32,6 +32,7 @@ async function _() {
 	}
 		createChart(temp_para); //graph external temp
 		createChart2(inttemp_para);
+		createChart3();
 }
 _().then().catch(console.error)
 
@@ -78,4 +79,16 @@ function createChart2(inttemp_para) {
 	};
 
 	var chart = new Chartist.Line('.rohan', data, options);
+}
+
+function createChart3(){
+	new Chartist.Pie('.donut', {
+  		series: [100]
+	}, {
+  		donut: true,
+	  donutWidth: 60,
+	  donutSolid: true,
+	  startAngle: 270,
+	  showLabel: true
+});
 }
