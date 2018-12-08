@@ -13,15 +13,23 @@ async function _() {
 		temp_para = parseInt(bs4_json.temperature)
 		inttemp_para = parseFloat(pi_json.int_temp)
 	loc = bs4_json.location
-	console.log(loc)
+	document.getElementByID("location").innerHTML = loc
 	weather = bs4_json.weather
-	console.log(weather);
+	document.getElementByID("weather").innerHTML = weather
 	time = bs4_json.time
-	console.log(time);
+	document.getElementByID("datetime").innerHTML = time
 	humidity = bs4_json.humidity
-	console.log(humidity);
+	document.getElementByID("humidity").innerHTML = humidity
 	temp_rating = bs4_json.temp_rating
-	console.log(temp_rating)
+	if (temp_rating=="good") {
+		document.getElementByID("rating").innerHTML = "Your plant appreciates you. Hopefully."
+	}
+	else if(temp_rating=="hot") {
+		document.getElementByID("rating").innerHTML = "Your plant would appreciate you more if you "
+	}
+	else {
+		document.getElementByID("rating").innerHTML = "Your plant would appreciate you more if you raised the temperature"
+	}
 		createChart(temp_para); //graph external temp
 		createChart2(inttemp_para);
 }
@@ -42,6 +50,9 @@ function createChart(temp_para) {
 		low: 0,
 		showArea: true,
 		showPoint: true
+		axisX: {
+			showLabel: false
+		}
 	};
 
 	var chart = new Chartist.Line('.venkat', data, options);
@@ -60,7 +71,10 @@ function createChart2(inttemp_para) {
 		height: '200px',
 		low: 0,
 		showArea: true,
-		showPoint: true
+		showPoint: true,
+		axisX: {
+			showLabel: false
+		}
 	};
 
 	var chart = new Chartist.Line('.rohan', data, options);
