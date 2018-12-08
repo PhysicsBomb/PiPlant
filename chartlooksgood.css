@@ -1,0 +1,24 @@
+.venkat-series .venkat-area{
+	fill: cyan;
+}
+
+.venkat-series .venkat-line {
+	stroke: blue;
+}
+
+.rohan-series .rohan-area {
+	fill: green;
+}
+
+.rohan-series .rohan-line {
+	stroke: black
+}
+
+.venkat {
+	text-align: left;
+}
+
+.rohan{
+	text-align: right;
+}
+

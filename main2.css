@@ -1,0 +1,22 @@
+.brennan{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#location{
+	text-align: center;
+}
+#weather{
+	text-align: center;
+}
+#datetime{
+	text-align: center;
+}
+#humidity{
+	text-align: center;
+}
+#rating{
+	text-align: center;
+}
