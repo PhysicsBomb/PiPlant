@@ -19,7 +19,7 @@
 	text-align: center;
 }
 #rating{
-	padding-top: 80px !important;
+	padding-top: 70px !important;
 	text-align: center;
 	right: 25%;
 	bottom: 30%;
@@ -34,7 +34,7 @@
 }
 
 .arrange{
-	padding-top:20px;
+	padding-top:10px;
 	padding-left: 500px;
 
 }
@@ -48,5 +48,5 @@
 	position:absolute;
 	transform: scale(1.25);
 	right:607px;
-	bottom:70px;
+	bottom:40px;
 }

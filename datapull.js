@@ -11,7 +11,9 @@ async function _() {
 	let bs4_json = await getFile('./bs4.json')
 	let pi_json = await getFile('./pi_data.json')
 		temp_para = parseInt(bs4_json.temperature)
+		document.getElementById("ext-temp").innerHTML = "Ext Temp: " + temp_para + ' F'
 		inttemp_para = parseFloat(pi_json.int_temp)
+		document.getElementById("int-temp").innerHTML = "Int Temp: " + inttemp_para + ' C'
 	loc = bs4_json.location
 	document.getElementById("location").innerHTML = "Location: " + loc
 	weather = bs4_json.weather
