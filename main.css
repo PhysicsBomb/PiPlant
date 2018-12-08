@@ -25,3 +25,19 @@
 .navpad{
   padding: 50px, 50px, 50px, 50px;
 }
+
+.inline1{
+  display: inline-block;
+}
+
+.fright{
+  float:right;
+}
+
+.fleft{
+  float:left;
+}
+
+.brennan-resize{
+  transform: scale(0.5);
+}

@@ -13,22 +13,22 @@ async function _() {
 		temp_para = parseInt(bs4_json.temperature)
 		inttemp_para = parseFloat(pi_json.int_temp)
 	loc = bs4_json.location
-	document.getElementByID("location").innerHTML = loc
+	document.getElementById("location").innerHTML = loc
 	weather = bs4_json.weather
-	document.getElementByID("weather").innerHTML = weather
+	document.getElementById("weather").innerHTML = weather
 	time = bs4_json.time
-	document.getElementByID("datetime").innerHTML = time
+	document.getElementById("datetime").innerHTML = time
 	humidity = bs4_json.humidity
-	document.getElementByID("humidity").innerHTML = humidity
+	document.getElementById("humidity").innerHTML = humidity
 	temp_rating = bs4_json.temp_rating
 	if (temp_rating=="good") {
-		document.getElementByID("rating").innerHTML = "Your plant appreciates you. Hopefully."
+		document.getElementById("rating").innerHTML = "Your plant appreciates you. Hopefully."
 	}
 	else if(temp_rating=="hot") {
-		document.getElementByID("rating").innerHTML = "Your plant would appreciate you more if you "
+		document.getElementById("rating").innerHTML = "Your plant would appreciate you more if you "
 	}
 	else {
-		document.getElementByID("rating").innerHTML = "Your plant would appreciate you more if you raised the temperature"
+		document.getElementById("rating").innerHTML = "Your plant would appreciate you more if you raised the temperature"
 	}
 		createChart(temp_para); //graph external temp
 		createChart2(inttemp_para);
@@ -50,9 +50,9 @@ function createChart(temp_para) {
 		low: 0,
 		showArea: true,
 		showPoint: true
-		axisX: {
-			showLabel: false
-		}
+		// axisX: {
+			// showLabel: false
+		// }
 	};
 
 	var chart = new Chartist.Line('.venkat', data, options);
