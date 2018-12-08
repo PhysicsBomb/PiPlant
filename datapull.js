@@ -13,13 +13,13 @@ async function _() {
 		temp_para = parseInt(bs4_json.temperature)
 		inttemp_para = parseFloat(pi_json.int_temp)
 	loc = bs4_json.location
-	document.getElementById("location").innerHTML = loc
+	document.getElementById("location").innerHTML = "Location: " + loc
 	weather = bs4_json.weather
-	document.getElementById("weather").innerHTML = weather
+	document.getElementById("weather").innerHTML = "Weather: " + weather
 	time = bs4_json.time
-	document.getElementById("datetime").innerHTML = time
+	document.getElementById("datetime").innerHTML = "Timestamp: " + time
 	humidity = bs4_json.humidity
-	document.getElementById("humidity").innerHTML = humidity
+	document.getElementById("humidity").innerHTML = "Humidity: " + humidity
 	temp_rating = bs4_json.temp_rating
 	if (temp_rating=="good") {
 		document.getElementById("rating").innerHTML = "Your plant appreciates you. Hopefully."
@@ -83,12 +83,12 @@ function createChart2(inttemp_para) {
 
 function createChart3(){
 	new Chartist.Pie('.donut', {
-  		series: [100]
+  		series: [0,0,0,100]
 	}, {
   		donut: true,
-	  donutWidth: 60,
+	  donutWidth: 20,
 	  donutSolid: true,
 	  startAngle: 270,
-	  showLabel: true
+	  showLabel: false
 });
 }

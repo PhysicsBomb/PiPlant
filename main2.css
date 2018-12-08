@@ -6,6 +6,7 @@
 }
 
 #location{
+	padding-top:50px;
 	text-align: center;
 }
 #weather{
@@ -18,15 +19,34 @@
 	text-align: center;
 }
 #rating{
-	position: fixed;
+	padding-top: 80px !important;
+	text-align: center;
 	right: 25%;
 	bottom: 30%;
 }
 #outside{
 	text-align: center;
-	font-family: Roboto; 
+	font-family: Roboto;
 }
 #inside{
 	text-align: center;
-	font-family: Roboto; 
+	font-family: Roboto;
+}
+
+.arrange{
+	padding-top:20px;
+	padding-left: 500px;
+
+}
+
+.graph_arrange{
+	padding-top:30px;
+}
+
+.gray {color:#4d4d4d; }
+.pie_arrange{
+	position:absolute;
+	transform: scale(1.25);
+	right:607px;
+	bottom:70px;
 }

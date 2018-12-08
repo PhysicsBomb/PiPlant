@@ -69,5 +69,6 @@
 }
 
 .brennan-resize{
-  transform: scale(0.5);
+  transform: scale(0.75);
+  margin-left: 10px;
 }
